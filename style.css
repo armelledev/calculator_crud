@@ -1,0 +1,120 @@
+.calculator{
+    gap: 10px;
+    /* background-color: blue; */
+    width: 300px;
+    height: 450px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "result result result result"
+
+    "sept huit neuf plus"
+    "quatre cinq six moins"
+    "un deux trois fois"
+    "virgul zero equal division"
+    "clear clear backspace backspace"
+    ;
+
+
+}
+
+  #result{
+   grid-area: result;
+     text-align:right;
+  }
+
+  .sept{
+ background-color: green;
+   grid-area: sept;
+
+  } 
+  .huit {
+    grid-area: huit;
+    background-color: green;
+
+  }
+  .neuf {
+ background-color: green;
+  grid-area: neuf;
+
+  }
+  .plus{
+    background-color:pink;
+    grid-area: plus;
+  }
+  .quatre{
+   grid-area: quatre;
+   background-color: green;
+  }
+   .cinq{
+  grid-area: cinq;
+  background-color: green;
+   } 
+   .six{
+  grid-area: six;
+ background-color: green;
+   }
+    .moins{
+    grid-area: moins;
+     background-color:pink;
+    
+   }
+   .un{
+ grid-area: un;
+  background-color: green;
+   }
+    .deux {
+   grid-area: deux;
+    background-color: green;
+    }
+    .trois{
+   grid-area: trois;
+   background-color: green;
+    } 
+    .fois{
+grid-area: fois;
+ background-color:pink;
+    }
+    .virgul{
+   grid-area: virgul;
+   background-color: aquamarine;
+    } 
+    .zero{
+     grid-area: zero;
+     background-color: green;
+    } 
+    .equal{
+   grid-area: equal;
+    } 
+    .division{
+   grid-area: division;
+    background-color:pink;
+    }
+
+    .clear{
+   grid-area: clear;
+   background-color: blueviolet;
+    } 
+    .clear{
+     grid-area: clear;
+    } 
+    
+    .backspace{
+   grid-area: backspace;
+    } 
+    
+    .backspace{
+        grid-area: backspace;
+
+    }
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
